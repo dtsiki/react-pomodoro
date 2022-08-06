@@ -1,0 +1,22 @@
+.countdown {
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+
+  &__value {
+    position: relative;
+
+    &::after {
+      display: inline-block;
+      content: ':';
+    }
+
+    &:last-child {
+      &::after {
+        content: none;
+      }
+    }
+  }
+}
